@@ -1,47 +1,48 @@
+/*****INITIALISATION*****/
 *{
     margin:0;
     padding:0;
 }
  html{ 
-     background-color :#ded1b7; /*:#a1ddcd48;*/
+     background-color :#ded1b7; 
      font-size: 20px;
      font-family:'kurale';
 }
 
- .hero{
-     height:450px;
-     overflow:hidden;
-     margin-bottom: 100px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+main{
+    display:flex;
+    justify-content: center;
+}
 
- #photo{
-     opacity:50%;
-     width:100%;
-     height: auto;
-     overflow: hidden; 
-     z-index: 10;    
- }
+/*****HEADER*****/
+#hero{
+    height:450px;
+    overflow:hidden;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+#photo{
+    opacity:50%;
+    width:100%;
+    height: auto;
+    z-index: 10;    
+}
 
 h1{
     color:#041D38;
     position:absolute;
-    z-index: 0;
     font-size:300%;
     background-color: rgba(0, 0, 0, 0.295);
     border-radius: 10%;
     padding:10px;  
 }
+
+/*****MAIN*****/
  
-.calendrier{
-    display: flex;
-    justify-content: center;
-}
-.formulaire{
+#formulaire{
     background-color: #041D38;
     width:500px;   
     border-radius: 15px;
@@ -50,20 +51,14 @@ h1{
     justify-content: center;
     margin-bottom: 200px; 
 }
-main{
-    display:flex;
-    justify-content: center;
-}
 
-#boite label{
+
+#boite_form label{
     color:#ded1b7;
     padding:40px 40px 20px 40px;
     display: flex;
     justify-content: center;
 }
-
-
-
 
 input,
 button{
@@ -87,19 +82,14 @@ button{
     background-color: #b9b7b7b9;
 }
 
-
-.text_form{
-    margin-left: 7rem;
-    color:#ffffff;
-    margin-top:4px;
-}
-.result{
+#result{
     margin-left:3rem;
     color:#ded1b7;
     padding:10px;
     font-size:150%;
 }
 
+/*****FOOTER*****/
 
 footer{
     height:70px;
@@ -111,14 +101,4 @@ footer{
 
 footer p{
     color:white;
-
 }
-/* button2 = Button(text = "Valider", padx=50, pady=15, fg="white", bg= "#09354B", font=quitter_font, command = valider)
-button2.place(bordermode="inside", x=580, y=640)
-
-
-root.mainloop() 
-titre = Label(root, text="Calendrier des marées", font=titre_font, fg="#041D38", bg="#DED1B7" ) 
-
-myLabel1 = Label(root, text="Écrivez la date au format jj.mm :", bg="#DED1B7", fg="#8D6559", font=question_font)    
-myLabel1.place(x=530, y=170) */
